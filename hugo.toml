@@ -1,0 +1,38 @@
+baseURL = "https://naumovax.github.io/"
+languageCode = "en-us"
+title = "Kseniia Naumova"
+theme = "PaperMod"
+
+[params]
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  hideFooter = true
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = false
+
+[params.profileMode]
+  enabled = true
+  title = "Kseniia Naumova (@naumovax)"
+  subtitle = "I'm a Senior Malware Analyst at Positive Technologies. I research malware in the network and web-related threats, improve traffic analysis tools, and explore new approaches to threat detection."
+  imageUrl = "/images/profile.jpg"
+  imageWidth = 360
+  imageHeight = 360
+
+[[params.socialIcons]]
+  name = "x"
+  url = "https://x.com/naumovax"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/naumovax"
+
+[[menu.main]]
+  name = "Talks"
+  url = "/talks/"
+  weight = 10
+
+[[menu.main]]
+  name = "Mentions"
+  url = "/mentions/"
+  weight = 20
