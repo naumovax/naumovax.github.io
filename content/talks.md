@@ -1,14 +1,9 @@
 +++
 title = "Conference Talks"
 draft = false
+showtoc = false
 +++
 
-## 2026
+A collection of my talks at cybersecurity conferences (camps, meetups etc.), covering malware research, network traffic analysis, and threat detection. Select a year to explore presentations, event photos, and available materials.
 
-### KazHackStan — Kazakhstan
-
-**What If We Stop Looking at Email? Hunting Phishing Kits Beyond the Inbox**
-
-### International Antivirus Conference — China
-
-**Navigating the Ocean of Network Dumps**
+{{< yearly talks >}}

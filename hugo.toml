@@ -2,11 +2,12 @@ baseURL = "https://naumovax.github.io/"
 languageCode = "en-us"
 title = "Kseniia Naumova"
 theme = "PaperMod"
+copyright = "[@naumovax](https://github.com/naumovax)"
 
 [params]
   defaultTheme = "auto"
   disableThemeToggle = false
-  hideFooter = true
+  hideFooter = false
   ShowReadingTime = false
   ShowShareButtons = false
   ShowPostNavLinks = false
@@ -14,10 +15,25 @@ theme = "PaperMod"
 [params.profileMode]
   enabled = true
   title = "Kseniia Naumova (@naumovax)"
-  subtitle = "I'm a Senior Malware Analyst at Positive Technologies. I research malware in the network and web-related threats, improve traffic analysis tools, and explore new approaches to threat detection."
+  subtitle = "<span class=\"profile-role\">Senior Network Threat Researcher at Positive Technologies</span>I research malware in network traffic and web-related threats, improve traffic analysis tools, and explore new approaches to network threat detection."
   imageUrl = "/images/profile.jpg"
   imageWidth = 360
   imageHeight = 360
+
+  [[params.profileMode.buttons]]
+    name = "Conference Talks"
+    url = "/talks/"
+  [[params.profileMode.buttons]]
+    name = "Mentions"
+    url = "/mentions/"
+  [[params.profileMode.buttons]]
+    name = "About"
+    url = "/about/"
+
+[params.assets]
+favicon = "/favicon.svg"
+favicon16x16 = "/favicon.svg"
+favicon32x32 = "/favicon.svg"
 
 [[params.socialIcons]]
   name = "x"
@@ -25,14 +41,24 @@ theme = "PaperMod"
 
 [[params.socialIcons]]
   name = "linkedin"
-  url = "https://www.linkedin.com/in/naumovax"
+  url = "https://www.linkedin.com/in/naumovax/"
 
 [[menu.main]]
-  name = "Talks"
-  url = "/talks/"
+  name = "Home"
+  url = "/"
   weight = 10
-
+[[menu.main]]
+  name = "Conference Talks"
+  url = "/talks/"
+  weight = 20
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 40
 [[menu.main]]
   name = "Mentions"
   url = "/mentions/"
-  weight = 20
+  weight = 30
+
+[markup.goldmark.renderer]
+  unsafe = true

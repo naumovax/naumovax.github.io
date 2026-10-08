@@ -1,0 +1,46 @@
+- year: 2026
+  event: "Positive Hack Camp"
+  location: "Moscow, Russia"
+  flag: "🇷🇺"
+  date: "27 July – 6 August 2026"
+  sort_date: "2026-08-06"
+  status: done
+  title: "Cybersecurity from a Defense Perspective"
+  event_url: "https://camp.ptsecurity.com/"
+  images: ["/images/talks/phcamp-1-2026.jpg"]
+
+- year: 2026
+  event: "Cyber Security Summit (7th International Antivirus Conference)"
+  location: "Tianjin, China"
+  flag: "🇨🇳"
+  date: "1–3 September 2026"
+  sort_date: "2026-09-02"
+  status: done
+  title: "Navigating the Ocean of Network Dumps: Approaches to Scalable Traffic Analysis"
+  event_url: "https://www.csstcyber.cn/"
+  images: ["/images/talks/csst-1-2026.jpg"]
+
+- year: 2026
+  event: "KazHackStan"
+  location: "Astana, Kazakhstan"
+  flag: "🇰🇿"
+  date: "29–30 September 2026"
+  sort_date: "2026-09-30"
+  status: done
+  title: "What If We Stop Looking at Email? Hunting Phishing Kits Beyond the Inbox"
+  video: "will be soon"
+  event_url: "https://kazhackstan.com/"
+  images: ["/images/talks/kazhackstan-1-2026.jpg"]
+
+- year: 2026
+  event: "SuriCon"
+  location: "Lisbon, Portugal"
+  flag: "🇵🇹"
+  date: "18–20 November 2026"
+  sort_date: "2026-11-19"
+  status: upcoming
+  title: "The Power of Correlation: Hunting Unknown Threats with Generic Suricata Rules"
+  slides: "will be soon"
+  video: "will be soon"
+  event_url: "https://suricon.net/"
+  images: []
