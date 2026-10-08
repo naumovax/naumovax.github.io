@@ -44,3 +44,71 @@
   video: "will be soon"
   event_url: "https://suricon.net/"
   images: []
+
+- year: 2026
+  event: "HSE University IT Forum: At the Intersection of Ideas and Technology"
+  location: "Moscow, Russia"
+  flag: "🇷🇺"
+  date: "25 April 2026"
+  sort_date: "2026-04-25"
+  status: done
+  title: "Phishing Kit Starter Pack: Modern Capabilities for Cyberattacks Across Industries"
+  event_url: "https://cs.hse.ru/it-forum/"
+  images: ["/images/talks/hse-forum-1-2025.jpg"]
+
+- year: 2025
+  event: "Cyber Security Summit (6th International Antivirus Conference)"
+  location: "Tianjin, China"
+  flag: "🇨🇳"
+  date: "23-24 September 2025"
+  sort_date: "2025-09-23"
+  status: done
+  title: "How hunting rules can help in advanced threat detection: new take on an old paradigm in network security"
+  event_url: "https://www.csstcyber.cn/"
+  images: ["/images/talks/csst-1-2025.jpg"]
+
+- year: 2025
+  event: "Botconf"
+  location: "Angers, France"
+  flag: "🇫🇷"
+  date: "20-23 May 2025"
+  sort_date: "2025-05-22"
+  status: done
+  title: "Tricky obfuscation techniques for C2 communication? Just detect them all!"
+  slides: "https://www.botconf.eu/wp-content/uploads/formidable/2/BOTCONF2025-KseniiaNaumova.pdf"
+  video: "https://www.youtube.com/watch?v=ORoYAH960J4"
+  event_url: "https://www.botconf.eu/past-editions/botconf-2025/"
+  images: ["/images/talks/botconf-1-2025.jpg"]
+
+- year: 2025
+  event: "Positive Hack Talks"
+  location: "Cairo, Egypt"
+  flag: "🇪🇬"
+  date: "26 February 2025"
+  sort_date: "2025-02-26"
+  status: done
+  title: "Effective new threat detection through generic rules in the network"
+  event_url: "https://phtalks.ptsecurity.com/"
+  images: ["/images/talks/phtalks-cairo-1-2025.jpg"]
+
+- year: 2024
+  event: "Positive Hack Talks"
+  location: "Hanoi, Vietnam"
+  flag: "🇻🇳"
+  date: "29 November 2024"
+  sort_date: "2024-11-29"
+  status: done
+  title: "How we automated the routine search for unknown malware in the network traffic"
+  event_url: "https://phtalks.ptsecurity.com/"
+  images: ["/images/talks/phtalks-hanoi-1-2024.jpg"]
+
+- year: 2024
+  event: "AVAR"
+  location: "Chennai, India"
+  flag: "🇮🇳"
+  date: "4-6 December 2024"
+  sort_date: "2024-12-06"
+  status: done
+  title: "Deep into the evolution of the SteganoAmor campaign: how the TA558 attacked companies around the world"
+  event_url: "https://events.aavar.org/avar2024/"
+  images: ["/images/talks/avar-1-2024.jpg"]
