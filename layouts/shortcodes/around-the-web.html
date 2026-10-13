@@ -1,0 +1,81 @@
+{{- $data := index site.Data "around-the-web" -}}
+<div class="around-the-web-content">
+  {{- with $data.x }}
+    <section class="around-the-web-x" aria-label="Pinned X feed">
+      <div class="around-the-web-x-header">
+        <div class="around-the-web-x-brand">
+          <span class="around-the-web-x-symbol" aria-hidden="true">𝕏</span>
+          <h2>From my feed <small>({{ .handle }})</small></h2>
+        </div>
+        <span class="around-the-web-pin">📌 Pinned</span>
+      </div>
+      {{- with .description }}
+        <p class="around-the-web-x-description">{{ . }}</p>
+      {{- end }}
+      {{- with .posts }}
+        <div class="around-the-web-x-posts">
+          {{- range . }}
+            {{- $image := .image | relURL -}}
+            {{- $target := $image -}}
+            {{- with .url }}{{ $target = . }}{{ end }}
+            <a class="around-the-web-x-post" href="{{ $target }}" target="_blank" rel="noopener noreferrer" aria-label="{{ default "View X post" .alt }}">
+              <img src="{{ $image }}" alt="{{ default "Screenshot of an X post" .alt }}" loading="lazy" decoding="async">
+            </a>
+          {{- end }}
+        </div>
+      {{- end }}
+      {{- with .profile }}
+        <div class="around-the-web-x-footer">
+          <a class="around-the-web-x-profile" href="{{ . }}" target="_blank" rel="noopener noreferrer">View profile ↗</a>
+        </div>
+      {{- end }}
+    </section>
+  {{- end }}
+
+  <div class="around-the-web-feed">
+    {{- range sort $data.items "date" "desc" }}
+      {{- $entry := . -}}
+      {{- $type := .type | default "" | lower -}}
+      {{- $linkLabel := "Read" -}}
+      {{- if eq $type "event" }}
+        {{- $linkLabel = "More info" -}}
+      {{- else if eq $type "telegram post" }}
+        {{- $linkLabel = "View post" -}}
+      {{- end }}
+      <article class="around-the-web-item">
+        <div class="around-the-web-item-body">
+          <div class="around-the-web-item-text">
+            <div class="around-the-web-item-meta">
+              {{- with .type }}
+                <span class="around-the-web-tag around-the-web-tag--{{ . | urlize }}">{{ . }}</span>
+              {{- end }}
+              {{- with .date_label }}<span class="around-the-web-item-date">{{ . }}</span>{{ end }}
+              {{- with .source }}<span class="around-the-web-item-source">{{ . }}</span>{{ end }}
+              {{- with .language }}<span class="around-the-web-item-language">{{ . }}</span>{{ end }}
+            </div>
+            <h2>{{ .title }}</h2>
+            {{- with .description }}<p>{{ . }}</p>{{ end }}
+            {{- with .url }}
+              <a class="around-the-web-read" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $linkLabel }} ↗</a>
+            {{- end }}
+          </div>
+          {{- $photos := .images -}}
+          {{- if not $photos }}
+            {{- with .image }}{{ $photos = slice . }}{{ end }}
+          {{- end }}
+          {{- with $photos }}
+            <div class="event-photos around-the-web-item-photos">
+              {{- range . }}
+                <a class="event-photo" href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer" aria-label="Open full-size photo for {{ $entry.title }}">
+                  <img src="{{ . | relURL }}" alt="Photo for {{ $entry.title }}" loading="lazy" decoding="async">
+                </a>
+              {{- end }}
+            </div>
+          {{- end }}
+        </div>
+      </article>
+    {{- else }}
+      <p class="around-the-web-empty">More to come.</p>
+    {{- end }}
+  </div>
+</div>

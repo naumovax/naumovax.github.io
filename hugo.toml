@@ -24,8 +24,8 @@ copyright = "[@naumovax](https://github.com/naumovax)"
     name = "Conference Talks"
     url = "/talks/"
   [[params.profileMode.buttons]]
-    name = "Mentions"
-    url = "/mentions/"
+    name = "Around the Web"
+    url = "/around-the-web/"
   [[params.profileMode.buttons]]
     name = "About"
     url = "/about/"
@@ -56,8 +56,8 @@ favicon32x32 = "/favicon.svg"
   url = "/about/"
   weight = 40
 [[menu.main]]
-  name = "Mentions"
-  url = "/mentions/"
+  name = "Around the Web"
+  url = "/around-the-web/"
   weight = 30
 
 [markup.goldmark.renderer]

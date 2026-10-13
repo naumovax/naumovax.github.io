@@ -8,6 +8,7 @@ I'm a Senior Network Threat Researcher at **Positive Technologies**, where I foc
 
 I started my career at **Kaspersky Lab**, researching web-related threats. That experience shaped my interest in understanding how attackers use web infrastructure and how their activity can be identified through network traffic.
 
+I hold **bachelor's and master's degrees in cybersecurity.**
 Outside my main work, I continue to explore web threats, OSINT, and social engineering techniques. Social engineering was also closely related to my master's research.
 
 ### CTF & Community
@@ -15,6 +16,8 @@ Outside my main work, I continue to explore web threats, OSINT, and social engin
 I've been involved in CTF competitions for over six years. In 2020, my team organized an international CTF competition, and in 2022 and 2023, I competed with an international team in the CTF finals at **Black Hat MEA**.
 
 I also organize cybersecurity events for students and have taught in several educational programs, including the Bank of Russia's Fintech Hub programs in Sirius and summer cybersecurity schools.
+
+You can find some highlights from these experiences, along with my articles and other updates, on my [Around the Web](/around-the-web/) page.
 
 ### Conferences & Public Speaking
 
@@ -33,6 +36,8 @@ I've visited over 20 countries, but I'm not trying to collect them all. Some pla
 I love sports, although I still can't decide which one is my favorite. Running (seven 10K races this year!), aerial gym (for the soul), or swimming (water is definitely my element).
 
 I'm also a regular at the cinema — 18 visits in 2026 so far. Yes, I keep count. 🎬
+
+I've also been to The Weeknd's concert in Paris (July 2026)! And yes, that definitely deserves a mention here. 🎶
 
 And I have a completely unreasonable love for orcas. No explanation. Just orcas.
 

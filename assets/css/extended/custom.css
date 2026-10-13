@@ -42,6 +42,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  max-width: 720px;
 }
 
 .profile_inner .buttons .button {
@@ -190,7 +191,6 @@
   min-width: 0;
 }
 
-.event-gallery,
 .event-photos {
   display: flex;
   flex: 0 0 110px;
@@ -202,7 +202,6 @@
   overflow: visible;
 }
 
-.event-gallery a,
 .event-photos a,
 .event-photo {
   position: relative;
@@ -215,7 +214,6 @@
   text-decoration: none;
 }
 
-.event-gallery img,
 .event-photos img {
   display: block;
   width: 100%;
@@ -227,23 +225,19 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .event-gallery a:hover,
-  .event-gallery a:focus-visible,
   .event-photos a:hover,
   .event-photos a:focus-visible {
     z-index: 30;
   }
 
-  .event-gallery a:hover img,
-  .event-gallery a:focus-visible img,
   .event-photos a:hover img,
   .event-photos a:focus-visible img {
     position: absolute;
     top: 50%;
     right: 0;
-    width: 320px;
+    width: min(320px, calc(100vw - 40px));
     height: auto;
-    max-height: 420px;
+    max-height: min(420px, 85vh);
     object-fit: contain;
     transform: translateY(-50%);
     background: var(--entry);
@@ -292,7 +286,6 @@
     align-items: stretch;
   }
 
-  .event-gallery,
   .event-photos {
     flex: 0 1 auto;
     width: 100%;
@@ -314,4 +307,275 @@
 
 .about-orca img:hover {
   transform: translateY(-8px) rotate(7deg);
+}
+
+.around-the-web-content {
+  margin-top: 28px;
+}
+
+.around-the-web-x {
+  margin-bottom: 28px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--entry);
+}
+
+.around-the-web-x-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.around-the-web-x-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.around-the-web-x-symbol {
+  flex-shrink: 0;
+  color: var(--primary);
+  font-size: 28px;
+  line-height: 1;
+}
+
+.post-content .around-the-web-x-brand h2 {
+  margin: 0;
+  font-size: 1.13rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.around-the-web-x-brand small {
+  color: var(--secondary);
+  font-size: 0.83rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.around-the-web-pin {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 4px 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--theme);
+  color: var(--secondary);
+  font-size: 0.76rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.around-the-web-x-description {
+  margin: 16px 0 0;
+  color: var(--secondary);
+  line-height: 1.6;
+}
+
+.around-the-web-x-posts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.around-the-web-x-post {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.around-the-web-x-post img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.around-the-web-x-footer {
+  margin-top: 18px;
+}
+
+.around-the-web-x-profile {
+  color: var(--primary);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.around-the-web-item {
+  padding: 23px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.around-the-web-item:first-child {
+  padding-top: 14px;
+}
+
+.around-the-web-item:last-child {
+  border-bottom: 0;
+}
+
+.around-the-web-item-body {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.around-the-web-item-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.around-the-web-item-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin-bottom: 10px;
+  color: var(--secondary);
+  font-size: 0.8rem;
+}
+
+.around-the-web-item-source {
+  color: #326cae;
+  font-weight: 600;
+}
+
+.dark .around-the-web-item-source {
+  color: #a3caff;
+}
+
+.around-the-web-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--tertiary);
+  color: var(--primary);
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.around-the-web-tag--article {
+  color: #1e40af;
+  background: #dbeafe;
+}
+
+.around-the-web-tag--research {
+  color: #6b21a8;
+  background: #f3e8ff;
+}
+
+.around-the-web-tag--telegram-post {
+  color: #075985;
+  background: #e0f2fe;
+}
+
+.around-the-web-tag--news {
+  color: #9a3412;
+  background: #ffedd5;
+}
+
+.around-the-web-tag--event {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.dark .around-the-web-tag--article {
+  color: #bfdbfe;
+  background: #1e3a5f;
+}
+
+.dark .around-the-web-tag--research {
+  color: #e9d5ff;
+  background: #43225f;
+}
+
+.dark .around-the-web-tag--telegram-post {
+  color: #bae6fd;
+  background: #164e63;
+}
+
+.dark .around-the-web-tag--news {
+  color: #fed7aa;
+  background: #653718;
+}
+
+.dark .around-the-web-tag--event {
+  color: #86efac;
+  background: #163d2a;
+}
+
+.post-content .around-the-web-item h2 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.around-the-web-item p {
+  margin: 0 0 12px;
+  color: var(--secondary);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.around-the-web-read {
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.around-the-web-empty {
+  padding: 16px 0;
+  color: var(--secondary);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .around-the-web-x-post:hover,
+  .around-the-web-x-post:focus-visible {
+    z-index: 40;
+    box-shadow: 0 8px 24px #0002;
+  }
+
+  .around-the-web-x-post:hover img,
+  .around-the-web-x-post:focus-visible img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(320px, calc(100vw - 40px));
+    height: auto;
+    max-height: min(450px, 85vh);
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    background: var(--entry);
+    border: 1px solid var(--border);
+    box-shadow: 0 12px 35px #0008;
+  }
+}
+
+@media (max-width: 650px) {
+  .around-the-web-x {
+    padding: 18px;
+  }
+
+  .around-the-web-x-posts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .around-the-web-item-body {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }

@@ -112,3 +112,49 @@
   title: "Deep into the evolution of the SteganoAmor campaign: how the TA558 attacked companies around the world"
   event_url: "https://events.aavar.org/avar2024/"
   images: ["/images/talks/avar-1-2024.jpg"]
+
+- year: 2024
+  event: "RusCrypto"
+  location: "Moscow Region, Russia"
+  flag: "🇷🇺"
+  date: "19-22 March 2024"
+  sort_date: "2024-03-20"
+  status: done
+  title: "Modern Techniques Used by Attackers to Conceal Malware Network Communications"
+  slides: "https://ruscrypto.ru/resource/archive/rc2024/files/02_naumova.pdf"
+  event_url: "https://www.ruscrypto.ru/accociation/archive/rc2024.html"
+  images: ["/images/talks/ruscrypto-1-2024.jpg"]
+
+- year: 2024
+  event: "Positive Hack Days 2"
+  location: "Moscow, Russia"
+  flag: "🇷🇺"
+  date: "23–26 May 2024"
+  sort_date: "2024-05-23"
+  status: done
+  title: "How Hackers Avoid Network Detection: Traffic Analysis Techniques and Ways to Evade Them"
+  event_url: "https://phdays.com/ru/forum/program/?date=2024%2F5%2F23&filterType=tag&tags=evasion&talk-id=683"
+  images: ["/images/talks/phd1fest-1-2024.jpg"]
+
+- year: 2024
+  event: "Positive Security Day"
+  location: "Moscow, Russia"
+  flag: "🇷🇺"
+  date: "10 October 2024"
+  sort_date: "2024-10-10"
+  status: done
+  title: "Using ML to Detect New Malware Families"
+  video: "https://rutube.ru/video/7fa5aab5400b4f6dbe57426ea1c73dfd/"
+  event_url: "https://psd.ptsecurity.com/program-day-1"
+  images: ["/images/talks/psd-1-2024.jpg"]
+
+- year: 2024
+  event: "SOC Forum"
+  location: "Moscow, Russia"
+  flag: "🇷🇺"
+  date: "6–8 November 2024"
+  sort_date: "2024-11-06"
+  status: done
+  title: "Stratocaster: How We Automated the Routine Hunt for Unknown Malware in Network Traffic"
+  event_url: "https://forumsoc.ru/2024/"
+  images: ["/images/talks/socforum-1-2024.jpg"]

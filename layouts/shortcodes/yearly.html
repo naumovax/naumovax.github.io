@@ -1,28 +1,25 @@
 {{- $kind := .Get 0 -}}
 {{- $items := site.Data.talks -}}
-{{- if eq $kind "mentions" -}}
-  {{- $items = site.Data.mentions -}}
-{{- end -}}
 <div class="yearly-content" data-year-tabs>
   <div class="year-tabs" role="tablist" aria-label="Choose year">
-    {{- range $i, $year := slice 2026 2025 2024 2023 -}}
+    {{- range $i, $year := slice 2026 2025 2024 -}}
       <button type="button" class="year-tab{{ if eq $i 0 }} is-active{{ end }}" role="tab" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}" data-year="{{ $year }}">{{ $year }}</button>
     {{- end -}}
   </div>
 
-  {{- range $i, $year := slice 2026 2025 2024 2023 -}}
+  {{- range $i, $year := slice 2026 2025 2024 -}}
     <section class="year-panel" data-year-panel="{{ $year }}" {{ if ne $i 0 }}hidden{{ end }}>
       {{- $entries := where $items "year" $year -}}
       {{- $entries = sort $entries "sort_date" "desc" -}}
       {{- if not $entries -}}
-        <p class="empty-year">{{ if eq $kind "mentions" }}Mentions for this year will be added soon.{{ else }}Conference materials for this year will be added soon.{{ end }}</p>
+        <p class="empty-year">Conference materials for this year will be added soon.</p>
       {{- else -}}
         {{- range $entries -}}
           <article class="event-card">
             <div class="event-layout">
               <div class="event-details">
                 <div class="event-card-head">
-                  <h2>{{ if eq $kind "mentions" }}{{ .title }}{{ else }}{{ .event }}{{ end }}</h2>
+                  <h2>{{ if eq $kind "around-the-web" }}{{ .title }}{{ else }}{{ .event }}{{ end }}</h2>
                   {{- with .status }}
                     <span class="event-status {{ if eq . "upcoming" }}is-upcoming{{ else }}is-done{{ end }}">{{ if eq . "upcoming" }}🔥 Upcoming{{ else }}✓ Done{{ end }}</span>
                   {{- end }}
