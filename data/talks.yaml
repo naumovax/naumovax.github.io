@@ -38,12 +38,12 @@
   flag: "🇵🇹"
   date: "18–20 November 2026"
   sort_date: "2026-11-19"
-  status: upcoming
+  status: done
   title: "The Power of Correlation: Hunting Unknown Threats with Generic Suricata Rules"
   slides: "will be soon"
   video: "will be soon"
   event_url: "https://suricon.net/"
-  images: []
+  images: ["/images/talks/suricon-1-2026.jpg"]
 
 - year: 2026
   event: "HSE University IT Forum: At the Intersection of Ideas and Technology"

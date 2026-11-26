@@ -82,3 +82,12 @@ items:
     description: "My first Black Hat MEA CTF Finals in Riyadh! Our international team qualified for the on-site competition, taking on challenges in web security, reverse engineering, pwn, cryptography, and forensics."
     url: "https://ctftime.org/event/1734/"
     image: "/images/around-the-web/blackhatmea-1-2022.jpg"
+
+  - date: "2021-04-02"
+    date_label: "April 2021"
+    type: "Article"
+    source: "Securelist"
+    title: "Browser lockers: extortion disguised as a fine"
+    description: "An investigation into browser locker campaigns impersonating government websites, focusing on their technical implementation, distribution methods, and financial fraud mechanisms."
+    url: "http://securelist.com/browser-lockers-extortion-disguised-as-a-fine/101735/"
+    image: "/images/around-the-web/kaspersky-browser-lockers.jpg"
